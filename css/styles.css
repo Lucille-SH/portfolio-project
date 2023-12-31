@@ -1,0 +1,13 @@
+/* font-family: 'Mulish', sans-serif;
+font-family: 'Patua One', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Yeseva One', serif; */
+
+h1 {
+  font-family: "Yeseva One", serif;
+}
+
+h2,
+h3 {
+  font-family: "Mulish", sans-serif;
+}
