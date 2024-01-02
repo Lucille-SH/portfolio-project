@@ -51,6 +51,36 @@ h2 {
   background-color: var(--primary-color);
 }
 
+.about-container {
+  padding: 160px 0;
+  margin: 0 140px;
+}
+
+.about-content {
+  padding-right: 94px;
+  padding-left: 20px;
+}
+
+.about-content h1 {
+  font-size: 64px;
+}
+
+.about-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--default-font-family);
+}
+
+.about-content p {
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-image {
+  padding: 65px 20px 20px;
+}
+
 .featured-projects {
   margin: 20px;
 }
@@ -87,6 +117,20 @@ h2 {
 @media (max-width: 992px) {
   .hero {
     padding: 100px 20px;
+  }
+
+  .about-container {
+    padding: 100px 0;
+    margin: 40px;
+  }
+
+  .about-content {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 44px;
   }
 
   .hero h1 {
@@ -140,6 +184,19 @@ h2 {
     font-size: 40px;
   }
 
+  .about-container {
+    margin: 15px;
+    padding-top: 50px;
+  }
+
+  .about-content h1 {
+    font-size: 40px;
+  }
+
+  .about-content h2 {
+    font-size: 16px;
+  }
+
   .featured-projects h2 {
     font-size: 35px;
   }
@@ -157,5 +214,9 @@ h2 {
 
   .featured-projects p {
     padding-bottom: 10px;
+  }
+
+  .about-image {
+    padding: 20px;
   }
 }
