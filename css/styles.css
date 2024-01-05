@@ -16,7 +16,7 @@ body {
 }
 
 nav li .active {
-  font-color: var(--primary-color);
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -76,7 +76,7 @@ h2 {
 }
 
 .work-content h1 {
-  padding: 0 250px 100px 0;
+  padding: 0 123px 100px 0;
 }
 
 .content h2 {
@@ -109,6 +109,10 @@ h3 {
 
 .featured-projects {
   margin: 20px;
+}
+
+.featured-project-image {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .featured-projects h2 {
