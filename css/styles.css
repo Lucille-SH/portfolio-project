@@ -65,9 +65,8 @@ h2 {
   font-size: 64px;
 }
 
-.work h1 {
+.work-content h1 {
   padding: 0 250px 100px 0;
-  font-size: 64px;
 }
 
 .content h2 {
@@ -131,6 +130,29 @@ h3 {
   border: var(--button-border);
 }
 
+@media (max-width: 1200px) {
+  .project-info {
+    padding: 0;
+  }
+
+  .featured-projects h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+
+  .featured-projects p {
+    padding-bottom: 10px;
+  }
+
+  .about-image {
+    padding: 20px;
+  }
+
+  .work-content h1 {
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 992px) {
   .hero {
     padding: 100px 20px;
@@ -150,7 +172,7 @@ h3 {
     font-size: 44px;
   }
 
-  .work h1 {
+  .work-content h1 {
     padding: 0 0 25px 0;
     text-align: center;
     font-size: 44px;
@@ -222,28 +244,5 @@ h3 {
 
   .featured-projects h2 {
     font-size: 35px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .project-info {
-    padding: 0;
-  }
-
-  .featured-projects h2 {
-    font-size: 40px;
-    padding-bottom: 10px;
-  }
-
-  .featured-projects p {
-    padding-bottom: 10px;
-  }
-
-  .about-image {
-    padding: 20px;
-  }
-
-  .work h1 {
-    padding-bottom: 50px;
   }
 }
