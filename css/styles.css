@@ -28,7 +28,7 @@ h2 {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 170px 20px;
+  padding: 170px 20px 140px;
 }
 
 .hero h1 {
@@ -37,9 +37,10 @@ h2 {
 }
 
 .hero h2 {
-  color: 272142;
+  color: #272142;
   font-size: 24px;
   margin: 20px 0 60px;
+  font-family: var(--default-font-family);
 }
 
 .hero p {
@@ -54,11 +55,13 @@ h2 {
   border-radius: 4px;
   font-size: 18px;
   text-decoration: none;
+  border: var(--button-border);
 }
 
 .btn-branding:hover {
-  color: white;
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: white;
+  border: var(--button-border);
 }
 
 .content-container {
@@ -137,11 +140,55 @@ h3 {
   padding: 18px 30px;
   border: var(--button-border);
   font-size: 16px;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-branding-outline:hover {
-  color: var(--primary-color);
+  color: white;
+  background-color: var(--primary-color);
   border: var(--button-border);
+}
+
+h4 {
+  font-family: var(--heading-font-family);
+  font-size: 48px;
+}
+
+footer .footer-container {
+  background-color: var(--secondary-color);
+  padding: 50px 100px 30px;
+  border-radius: 10px;
+  margin: 0 100px 30px;
+}
+
+.footer-container .footer-content {
+  font-size: 18px;
+}
+
+footer .email-link a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+footer .email-link a:hover {
+  color: var(--primary-color);
+}
+
+footer .icon-links a {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin: 0 30px;
+  font-size: 24px;
+  padding: 10px 17px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .icon-links a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 1200px) {
@@ -169,7 +216,7 @@ h3 {
 
 @media (max-width: 992px) {
   .hero {
-    padding: 130px 20px;
+    padding: 150px 20px 115px;
   }
 
   .content-container {
