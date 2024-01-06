@@ -3,6 +3,7 @@
   --default-font-family: "Mulish", sans-serif;
   --secondary-color: #ebedf9;
   --primary-color: #113f67;
+  --link-color: #a2a8d3;
   --button-border: solid 1px var(--primary-color);
 }
 
@@ -69,9 +70,12 @@ h2 {
   margin: 0 140px;
 }
 
+.content-container img:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
 .content {
   padding-right: 94px;
-  padding-left: 20px;
 }
 
 .content h1 {
@@ -114,10 +118,6 @@ h3 {
 
 .featured-projects {
   margin: 20px;
-}
-
-.featured-project-image {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .featured-projects h2 {
@@ -175,7 +175,7 @@ footer .email-link a {
 }
 
 footer .email-link a:hover {
-  color: var(--primary-color);
+  color: var(--link-color);
 }
 
 footer .icon-links a {
@@ -191,6 +191,28 @@ footer .icon-links a {
 footer .icon-links a:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.contact-icons {
+  color: var(--primary-color);
+}
+
+.contact-heading h1 {
+  background-color: var(--secondary-color);
+  padding: 170px 140px 100px;
+  font-size: 64px;
+}
+
+.contact-container {
+  padding: 20px 140px;
+}
+
+.contact a {
+  color: black;
+}
+
+.contact a:hover {
+  color: var(--link-color);
 }
 
 @media (max-width: 1200px) {
@@ -284,6 +306,11 @@ footer .icon-links a:hover {
   .btn-branding {
     padding: 12px 22px;
     font-size: 13px;
+  }
+
+  .contact-heading h1 {
+    font-size: 40px;
+    padding: 150px 40px 60px;
   }
 }
 
