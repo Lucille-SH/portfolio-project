@@ -20,6 +20,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Patua+One&family=Poppins:wght@400;700&family=Yeseva+One&display=swap"
       rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
+      rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/eb83d9a927.js"
       crossorigin="anonymous"></script>
@@ -75,25 +80,28 @@
     <div class="hero">
       <p>Hi, I am</p>
       <h1>Lucille Shankland</h1>
-      <h2 class="text-muted">Front-end Developer, based in Ireland.</h2>
+      <h2>Front-end Developer, based in Ireland.</h2>
       <div>
-        <a class="btn btn-branding" title="Contact" href="#">Contact Me</a>
+        <a class="btn btn-branding" title="Contact Lucille" href="/contact.html"
+          >Contact Me</a
+        >
       </div>
     </div>
     <p class="text-center m-4">⥭ Featured Projects ⥫</p>
-    <div class="featured-projects">
+    <div class="featured-projects-container">
       <div class="row m-lg-5">
         <div class="col p-2 featured-project-image">
           <img
-            src="/images/ai-generator.png"
-            title="AI Lyrics App"
-            alt="ai-lyrics-project"
-            class="img-fluid rounded" />
+            src="/images/travel-project.png"
+            title="Travel to Youghal"
+            alt="Youghal Travel Page"
+            class="img-fluid rounded border" />
         </div>
         <div class="col project-info">
-          <h2 class="mb-xl-5">AI Lyrics Project</h2>
-          <p class="mb-xl-5">
-            An AI Music Lyric Generator built using HTML, CSS and Javascript.
+          <h2 class="mb-xl-3">Responsive Project</h2>
+          <p class="mb-xl-3">
+            A responsive website about travel, with Instagram and Google Map
+            embeds. Built using HTML and CSS.
           </p>
           <a
             href="/work.html#ai-generator"
@@ -105,9 +113,9 @@
       </div>
 
       <div class="row m-lg-5">
-        <div class="col project-info">
-          <h2 class="mb-xl-5">Weather App</h2>
-          <p class="mb-xl-5">
+        <div class="col project-info text-lg-end">
+          <h2 class="mb-xl-3">Weather App</h2>
+          <p class="mb-xl-3">
             A weather app built using HTML, CSS and Javascript.
           </p>
           <a
@@ -122,7 +130,7 @@
             src="/images/weather-app.png"
             title="Library Project"
             alt="library-project"
-            class="img-fluid rounded" />
+            class="img-fluid rounded border" />
         </div>
       </div>
 
@@ -132,11 +140,11 @@
             src="/images/world-clock.png"
             title="Library Project"
             alt="library-project"
-            class="img-fluid rounded" />
+            class="img-fluid rounded border" />
         </div>
         <div class="col project-info">
-          <h2 class="mb-xl-5">World Clock Project</h2>
-          <p class="mb-xl-5">
+          <h2 class="mb-xl-3">World Clock Project</h2>
+          <p class="mb-xl-3">
             A World Clock, built using HTML, CSS and Javascript.
           </p>
           <a
@@ -147,21 +155,23 @@
           >
         </div>
       </div>
-      <footer>
-        <div class="footer-container d-none d-xl-flex justify-content-around">
-          <div>
-            <h4>Work Enquiry</h4>
-            <p class="text-muted footer-content">Let's get in touch!</p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              title="Contact Lucille"
-              class="btn btn-branding"
-              >Contact Me</a
-            >
-          </div>
+    </div>
+    <footer>
+      <div class="footer-container d-none d-xl-flex justify-content-around">
+        <div>
+          <h4>Work Enquiry</h4>
+          <p class="footer-content">Let's get in touch!</p>
         </div>
+        <div>
+          <a
+            href="/contact.html"
+            title="Contact Lucille"
+            class="btn btn-branding"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+      <div class="footer-2">
         <div class="email-link mb-5 mt-5">
           <a
             href="mailto:lucilleshankland@gmail.com"
@@ -184,7 +194,7 @@
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
