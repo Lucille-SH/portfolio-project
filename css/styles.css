@@ -19,6 +19,7 @@ body {
 .navbar {
   background-color: white !important;
   font-size: 18px;
+  border-bottom: solid 1px lightgray;
 }
 
 nav li .active {
