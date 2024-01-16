@@ -46,7 +46,8 @@ h4 {
 }
 
 .hero {
-  background: var(--gradient);
+  background: url(/images/blue-landscape.jpg);
+  filter: grayscale(80%) brightness(-2); 
   text-align: center;
   padding: 170px 20px 140px;
 }
