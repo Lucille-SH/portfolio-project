@@ -4,7 +4,7 @@
   --secondary-color: #212529;
   --primary-color:  #e3f3fd;
   --link-color: #396a7f;
-  --button-border: solid 1px var(--primary-color);
+  --button-border: solid 1px var(--secondary-color);
   --gradient: linear-gradient(
     178deg,
     rgba(201, 234, 252, 0.51) 14.9%,
@@ -154,7 +154,7 @@ h4 {
 }
 
 .btn-branding-outline {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background-color: white;
   padding: 16px 45px;
   border: var(--button-border);
@@ -163,8 +163,8 @@ h4 {
 }
 
 .btn-branding-outline:hover {
-  color: white;
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: white;
   border: var(--button-border);
 }
 
@@ -210,11 +210,15 @@ footer .icon-links a:hover {
 }
 
 .contact-icons {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .contact-heading h1 {
-  background: var(--gradient);
+  background-image: url(/images/blue-landscape-edit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
   padding: 170px 140px 100px;
   font-size: 64px;
 }
@@ -260,6 +264,14 @@ footer .icon-links a:hover {
     color: white;
     background-position: center;
     padding: 20px 0;
+  }
+
+  footer .email-link a {
+    color: var(--primary-color);
+  }
+  
+  footer .email-link a:hover {
+    text-decoration: underline;
   }
 
   .icon-links {
