@@ -73,7 +73,6 @@ h4 {
 }
 
 .btn-branding {
-  color: white;
   background-color: var(--primary-color);
   padding: 16px 45px;
   border-radius: 4px;
@@ -163,8 +162,8 @@ h4 {
 }
 
 .btn-branding-outline:hover {
-  color: var(--primary-color);
-  background-color: white;
+  color: white;
+  background-color: var(--secondary-color);
   border: var(--button-border);
 }
 
@@ -191,7 +190,7 @@ footer .email-link a {
 }
 
 footer .email-link a:hover {
-  color: var(--link-color);
+  color: var(--primary-color);
 }
 
 footer .icon-links a {
@@ -272,6 +271,7 @@ footer .icon-links a:hover {
   
   footer .email-link a:hover {
     text-decoration: underline;
+    color: var(--primary-color);
   }
 
   .icon-links {
