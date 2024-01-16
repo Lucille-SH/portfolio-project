@@ -46,8 +46,10 @@ h4 {
 }
 
 .hero {
-  background: url(/images/blue-landscape.jpg);
-  filter: grayscale(80%) brightness(-2); 
+  background-image: url(/images/blue-landscape.jpg);
+  filter:  brightness(73%) grayscale(100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 170px 20px 140px;
 }
