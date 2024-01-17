@@ -1,10 +1,10 @@
 :root {
   --heading-font-family: "Mulish", sans-serif;
   --default-font-family: "Mulish", sans-serif;
-  --secondary-color: #e3f3fd;
-  --primary-color: #212529;
+  --secondary-color: #212529;
+  --primary-color: #e3f3fd;
   --link-color: #396a7f;
-  --button-border: solid 1px var(--primary-color);
+  --button-border: solid 1px var(--secondary-color);
   --gradient: linear-gradient(
     178deg,
     rgba(201, 234, 252, 0.51) 14.9%,
@@ -46,9 +46,12 @@ h4 {
 }
 
 .hero {
-  background: var(--gradient);
+  background-image: url(/images/blue-landscape-edit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 170px 20px 140px;
+  color: white;
 }
 
 .hero h1 {
@@ -70,7 +73,6 @@ h4 {
 }
 
 .btn-branding {
-  color: white;
   background-color: var(--primary-color);
   padding: 16px 45px;
   border-radius: 4px;
@@ -151,7 +153,7 @@ h4 {
 }
 
 .btn-branding-outline {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background-color: white;
   padding: 16px 45px;
   border: var(--button-border);
@@ -161,15 +163,19 @@ h4 {
 
 .btn-branding-outline:hover {
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: var(--button-border);
 }
 
 footer .footer-container {
-  background: var(--gradient);
+  background-image: url(/images/blue-landscape-edit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
   padding: 50px 100px 30px;
   border-radius: 10px;
-  margin: 130px 100px 30px;
+  margin: 75px 100px 30px;
 }
 
 .footer-container .footer-content {
@@ -188,8 +194,8 @@ footer .email-link a:hover {
 }
 
 footer .icon-links a {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   margin: 0 30px;
   font-size: 24px;
   padding: 10px 17px;
@@ -198,16 +204,20 @@ footer .icon-links a {
 }
 
 footer .icon-links a:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.contact-icons {
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
+.contact-icons {
+  color: var(--secondary-color);
+}
+
 .contact-heading h1 {
-  background: var(--gradient);
+  background-image: url(/images/blue-landscape-edit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
   padding: 170px 140px 100px;
   font-size: 64px;
 }
@@ -247,8 +257,21 @@ footer .icon-links a:hover {
   }
 
   .footer-2 {
-    background: var(--gradient);
+    background-image: url(/images/blue-landscape-edit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
     padding: 20px 0;
+  }
+
+  footer .email-link a {
+    color: var(--primary-color);
+  }
+
+  footer .email-link a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
   }
 
   .icon-links {
@@ -329,6 +352,10 @@ footer .icon-links a:hover {
   .contact-heading h1 {
     font-size: 40px;
     padding: 150px 40px 60px;
+  }
+
+  .contact-container {
+    padding: 25px;
   }
 }
 
