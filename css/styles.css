@@ -1,8 +1,8 @@
 :root {
   --default-font-family: "Mulish", sans-serif;
-  --secondary-color: #212529;
-  --primary-color: #e3f3fd;
-  --link-color: #396a7f;
+  /* --secondary-color: #212529; */
+  --primary-color: white;
+  --secondary-color: #33495f;
   --button-border: solid 1px var(--secondary-color);
   --gradient: linear-gradient(
     178deg,
@@ -96,8 +96,16 @@ h4 {
   margin: 0 140px;
 }
 
+.project-header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 30px;
+  margin: 0;
+  font-weight: 200;
+}
+
 .project-container {
-  padding: 40px 0;
+  padding: 80px 0;
   margin: 0 140px;
 }
 
@@ -125,11 +133,11 @@ h4 {
   line-height: 1.8;
 }
 
-.content a {
+.contact a {
   text-decoration: none;
 }
 
-.content a:hover {
+.contact a:hover {
   color: var(--primary-color);
 }
 
@@ -166,7 +174,7 @@ footer .footer-container {
   background-position: center;
   padding: 50px 100px 30px;
   border-radius: 10px;
-  margin: 75px 100px 30px;
+  margin: 20px 100px 30px;
 }
 
 .footer-container .footer-content {
@@ -181,12 +189,12 @@ footer .email-link a {
 }
 
 footer .email-link a:hover {
-  color: var(--link-color);
+  text-decoration: underline;
 }
 
 footer .icon-links a {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 0 30px;
   font-size: 24px;
   padding: 10px 17px;
@@ -195,12 +203,12 @@ footer .icon-links a {
 }
 
 footer .icon-links a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .contact-icons {
-  color: var(--secondary-color);
+  color: #212529;
 }
 
 .contact-heading h1 {
@@ -222,7 +230,8 @@ footer .icon-links a:hover {
 }
 
 .contact a:hover {
-  color: var(--link-color);
+  color: black;
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -241,6 +250,16 @@ footer .icon-links a:hover {
     color: white;
     background-position: center;
     padding: 20px 0;
+  }
+
+  footer .icon-links a {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+
+  footer .icon-links a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 
   footer .email-link a {
@@ -284,7 +303,7 @@ footer .icon-links a:hover {
   }
 
   .project-container {
-    padding: 20px 0;
+    padding: 60px 0;
     margin: 40px;
   }
 
