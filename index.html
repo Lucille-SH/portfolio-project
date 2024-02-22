@@ -35,7 +35,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img src="/images/logo-3.png" alt="logo" width="80" height="50" />
+          <img src="/images/logo-4.png" alt="logo" width="50px" />
         </a>
         <button
           class="navbar-toggler"
@@ -64,11 +64,6 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="Projects" href="/work.html"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
               <a class="nav-link" title="Contact" href="/contact.html"
                 >Contact</a
               >
@@ -77,88 +72,106 @@
         </div>
       </div>
     </nav>
-    <div class="hero">
-      <p>Hi, I am</p>
-      <h1>Lucille Shankland</h1>
-      <h2>Front-end Developer, based in Ireland.</h2>
-      <div>
-        <a
-          class="btn btn-branding text-muted"
-          title="Contact Lucille"
-          href="/contact.html"
-          >Contact Me</a
-        >
-      </div>
-    </div>
-    <p class="text-center m-4">⥭ Featured Projects ⥫</p>
-    <div class="featured-projects-container">
-      <div class="row m-lg-5">
-        <div class="col p-2 featured-project-image">
-          <img
-            src="/images/travel-project.png"
-            title="Travel to Youghal"
-            alt="Youghal Travel Page"
-            class="img-fluid rounded border" />
-        </div>
-        <div class="col project-info">
-          <h2 class="mb-xl-3">Responsive Project</h2>
-          <p class="mb-xl-3">
-            A responsive website about travel, with Instagram and Google Map
-            embeds. Built using HTML and CSS.
-          </p>
+    <div class="hero grid text-end">
+      <div class="row">
+        <div class="col-lg-6 pe-4 hero-column-one">
+          <p>Hi, I am</p>
+          <h1>Lucille Shankland</h1>
+          <h2>Front-end Developer, based in Ireland.</h2>
           <a
-            href="/work.html#ai-generator"
-            title="View AI Generator Project"
-            class="btn btn-branding-outline"
-            >Learn More</a
+            class="btn btn-branding text-muted"
+            title="Contact Lucille"
+            href="/contact.html"
+            >Contact Me</a
           >
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="/images/website-profile-image-lucille.jpeg"
+            alt="Lucille's profile image."
+            class="img-fluid text-center hero-image" />
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-12 text-center">
+          <a
+            class="btn btn-branding text-muted"
+            title="Contact Lucille"
+            href="/contact.html"
+            >Contact Me</a
+          >
+        </div>
+      </div> -->
+    </div>
+    <h5 class="text-center m-4">
+      Take a look at some of my favourite projects!
+    </h5>
+
+    <div class="project-container project-link">
+      <div class="row">
+        <div class="col-sm p-3">
+          <a
+            href="https://weatherwisereact.netlify.app/"
+            target="_blank"
+            title="View Weather App">
+            <img
+              src="/images/weather-app.png"
+              alt="Weather App"
+              class="img-fluid rounded border" />
+          </a>
+          <h3 class="text-center">Weather App</h3>
+          <p class="work text-center">Built with React and SheCodes API</p>
+        </div>
+
+        <div class="col-sm p-3">
+          <a
+            href="https://dictionary-app-ls.netlify.app/"
+            target="_blank"
+            title="View Dictionary App">
+            <img
+              src="/images/dictionary-app.png"
+              alt="Dictionary App"
+              class="img-fluid rounded border" />
+          </a>
+          <h3 class="text-center">Dictionary App</h3>
+          <p class="work text-center">
+            Built with React and two SheCodes API's
+          </p>
         </div>
       </div>
 
-      <div class="row m-lg-5">
-        <div class="col project-info text-lg-end">
-          <h2 class="mb-xl-3">Weather App</h2>
-          <p class="mb-xl-3">
-            A weather app built using HTML, CSS and Javascript.
-          </p>
+      <div class="row">
+        <div class="col-sm p-3">
           <a
-            href="/work.html#weather-app"
-            title="View Weather App"
-            class="btn btn-branding-outline"
-            >Learn More</a
-          >
+            href="https://world-clock-ls.netlify.app/"
+            target="_blank"
+            title="Open World Clock App">
+            <img
+              src="/images/world-clock.png"
+              alt="World Clock App"
+              class="img-fluid rounded border" />
+          </a>
+          <h3 class="text-center">World Clock</h3>
+          <p class="work text-center">Built with HTML, CSS and Javascript</p>
         </div>
-        <div class="col p-2 featured-project-image">
-          <img
-            src="/images/weather-app.png"
-            title="Library Project"
-            alt="library-project"
-            class="img-fluid rounded border" />
-        </div>
-      </div>
-
-      <div class="row m-lg-5">
-        <div class="col p-2 featured-project-image">
-          <img
-            src="/images/world-clock.png"
-            title="Library Project"
-            alt="library-project"
-            class="img-fluid rounded border" />
-        </div>
-        <div class="col project-info">
-          <h2 class="mb-xl-3">World Clock Project</h2>
-          <p class="mb-xl-3">
-            A World Clock, built using HTML, CSS and Javascript.
-          </p>
+        <div class="col-sm p-3">
           <a
-            href="/work.html#world-clock"
-            title="View World Clock Project"
-            class="btn btn-branding-outline"
-            >Learn More</a
-          >
+            href="https://traveltoyoughal.netlify.app/"
+            target="_blank"
+            title="Open Travel Page">
+            <img
+              src="/images/travel-project.png"
+              alt="Travel Project"
+              class="img-fluid rounded border" />
+          </a>
+          <h3 class="text-center">Responsive Web Page</h3>
+          <p class="work text-center">
+            Responsive web page. Uses Instagram and Google Map embeds.
+          </p>
         </div>
       </div>
     </div>
+
     <footer>
       <div class="footer-container d-none d-xl-flex justify-content-around">
         <div>
@@ -169,7 +182,7 @@
           <a
             href="/contact.html"
             title="Contact Lucille"
-            class="btn btn-branding text-muted"
+            class="btn btn-branding-outline text-muted"
             >Contact Me</a
           >
         </div>

@@ -1,5 +1,4 @@
 :root {
-  --heading-font-family: "Mulish", sans-serif;
   --default-font-family: "Mulish", sans-serif;
   --secondary-color: #212529;
   --primary-color: #e3f3fd;
@@ -14,10 +13,11 @@
 
 body {
   font-family: var(--default-font-family);
+  background-color: rgba(86, 91, 84, 0.02);
 }
 
 .navbar {
-  background-color: white !important;
+  background-color: #fbfbfb !important;
   font-size: 18px;
   border-bottom: solid 1px lightgray;
 }
@@ -29,7 +29,7 @@ nav li .active {
 
 h1,
 h2 {
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   font-weight: 700;
 }
 
@@ -40,7 +40,7 @@ h3 {
 }
 
 h4 {
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   font-size: 48px;
   font-weight: 600;
 }
@@ -49,19 +49,18 @@ h4 {
   background-image: url(/images/blue-landscape-edit.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
-  padding: 170px 20px 140px;
+  padding: 170px 40px 100px;
   color: white;
 }
 
 .hero h1 {
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   font-size: 96px;
 }
 
 .hero h2 {
   font-size: 24px;
-  margin: 20px 0 60px;
+  margin: 20px 0 30px;
   font-family: var(--default-font-family);
   opacity: 0.9;
   font-weight: 300;
@@ -72,8 +71,13 @@ h4 {
   font-weight: bold;
 }
 
+.hero-image {
+  border-radius: 50%;
+}
+
 .btn-branding {
-  background-color: var(--primary-color);
+  margin: 0;
+  background-color: white;
   padding: 16px 45px;
   border-radius: 4px;
   font-size: 18px;
@@ -82,32 +86,22 @@ h4 {
 }
 
 .btn-branding:hover {
-  color: var(--primary-color);
+  color: white;
+  border: solid 1px white;
   background-color: white;
-  border: var(--button-border);
 }
 
-.featured-projects-container {
-  margin: 0 100px;
-}
-
-.featured-projects-container h2 {
-  font-size: 55px;
-}
-
-.featured-projects-container p {
-  opacity: 0.7;
-  line-height: 30px;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.content-container {
-  padding: 160px 0 60px;
+.about-container {
+  padding: 160px 0 100px;
   margin: 0 140px;
 }
 
-.contact-content img:hover {
+.project-container {
+  padding: 40px 0;
+  margin: 0 140px;
+}
+
+.project-link img:hover {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -117,10 +111,6 @@ h4 {
 
 .content h1 {
   font-size: 64px;
-}
-
-.work-content h1 {
-  padding: 0 123px 100px 0;
 }
 
 .content h2 {
@@ -153,18 +143,19 @@ h4 {
 }
 
 .btn-branding-outline {
-  color: var(--secondary-color);
+  margin-top: 10px;
   background-color: white;
   padding: 16px 45px;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
   border: var(--button-border);
-  font-size: 16px;
-  transition: all 100ms ease-in-out;
 }
 
 .btn-branding-outline:hover {
   color: white;
-  background-color: var(--secondary-color);
-  border: var(--button-border);
+  border: solid 1px white;
+  background-color: white;
 }
 
 footer .footer-container {
@@ -239,21 +230,8 @@ footer .icon-links a:hover {
     padding: 0;
   }
 
-  .featured-projects-container h2 {
-    font-size: 40px;
-    padding-bottom: 10px;
-  }
-
-  .featured-projects-container p {
-    padding-bottom: 10px;
-  }
-
   .about-image {
     padding: 20px;
-  }
-
-  .work-content h1 {
-    padding-bottom: 50px;
   }
 
   .footer-2 {
@@ -279,29 +257,35 @@ footer .icon-links a:hover {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .hero {
     padding: 150px 20px 115px;
   }
 
-  .content-container {
-    padding: 100px 0;
-    margin: 40px;
-  }
-
-  .content {
-    margin: 0;
-    padding: 20px;
-  }
-
-  .content h1 {
-    font-size: 44px;
-  }
-
-  .work-content h1 {
-    padding: 0 0 25px 0;
+  .hero h1,
+  .hero h2,
+  .hero p {
     text-align: center;
-    font-size: 44px;
+  }
+
+  .hero-column-one {
+    padding: 0;
+  }
+
+  .hero img {
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  .about-container {
+    padding: 80px 0 40px;
+    margin: 40px;
+    text-align: center;
+  }
+
+  .project-container {
+    padding: 20px 0;
+    margin: 40px;
   }
 
   .hero h1 {
@@ -316,29 +300,6 @@ footer .icon-links a:hover {
     font-size: 26px;
   }
 
-  .project-info {
-    padding-top: 0;
-    margin: 30px;
-  }
-
-  .featured-project-image {
-    display: none;
-  }
-
-  .featured-projects-container {
-    text-align: center;
-    margin: 0;
-  }
-
-  .featured-projects-container h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-
-  .featured-projects-container p {
-    margin: 0 30px 20px;
-  }
-
   .btn-branding-outline {
     padding: 12px 22px;
     font-size: 13px;
@@ -346,16 +307,29 @@ footer .icon-links a:hover {
 
   .btn-branding {
     padding: 12px 22px;
-    font-size: 13px;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
   }
 
   .contact-heading h1 {
     font-size: 40px;
     padding: 150px 40px 60px;
+    text-align: center;
   }
 
   .contact-container {
     padding: 25px;
+    text-align: center;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .content h1 {
+    font-size: 55px;
   }
 }
 
@@ -364,7 +338,7 @@ footer .icon-links a:hover {
     font-size: 40px;
   }
 
-  .content-container {
+  .about-container {
     margin: 15px;
     padding-top: 50px;
   }
@@ -375,9 +349,5 @@ footer .icon-links a:hover {
 
   .content h2 {
     font-size: 16px;
-  }
-
-  .featured-projects-container h2 {
-    font-size: 35px;
   }
 }
