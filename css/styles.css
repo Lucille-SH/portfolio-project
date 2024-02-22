@@ -1,6 +1,5 @@
 :root {
   --default-font-family: "Mulish", sans-serif;
-  /* --secondary-color: #212529; */
   --primary-color: white;
   --secondary-color: #33495f;
   --button-border: solid 1px var(--secondary-color);
@@ -135,6 +134,7 @@ h4 {
 
 .contact a {
   text-decoration: none;
+  font-size: 20px;
 }
 
 .contact a:hover {
@@ -182,10 +182,10 @@ footer .footer-container {
 }
 
 footer .email-link a {
-  color: black;
+  color: var(--secondary-color);
   text-align: center;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 footer .email-link a:hover {
@@ -195,9 +195,9 @@ footer .email-link a:hover {
 footer .icon-links a {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  margin: 0 30px;
-  font-size: 24px;
-  padding: 10px 17px;
+  margin: 0 20px;
+  font-size: 20px;
+  padding: 7px 14px;
   border-radius: 50%;
   transition: all 150ms ease-in-out;
 }
@@ -232,6 +232,21 @@ footer .icon-links a:hover {
 .contact a:hover {
   color: black;
   text-decoration: underline;
+}
+
+.tool-icons {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+.resume-btn {
+  color: var(--secondary-color);
+  border: solid 1px var(--secondary-color);
+}
+
+.resume-btn:hover {
+  color: var(--secondary-color);
+  border: solid 2px var(--secondary-color);
 }
 
 @media (max-width: 1200px) {
